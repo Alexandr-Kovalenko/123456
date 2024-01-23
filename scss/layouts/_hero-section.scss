@@ -1,13 +1,13 @@
 .hero-section {
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url(../images/hero-section-background.svg);
+  background-image: url(../../images/hero-section-background.svg);
   background-repeat: no-repeat;
 
   &__container {
     display: flex;
     gap: 65px;
-    background-image: url(../images/background-elements.png);
+    background-image: url(../../images/background-elements.png);
     background-repeat: no-repeat;
     background-position: 552px 156px;
   }
