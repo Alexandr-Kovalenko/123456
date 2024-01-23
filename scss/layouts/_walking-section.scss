@@ -72,6 +72,10 @@
       color: var(--color-secondary-yellow);
       fill: var(--color-secondary-yellow);
     }
+
+    &__text-video {
+      text-decoration: none;
+    }
   }
 
   &__text-container {
