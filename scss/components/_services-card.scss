@@ -1,0 +1,9 @@
+.services-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 47px 72px;
+  border: 1px solid var(--color-secondary-light-gray);
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px #1818170d;
+}

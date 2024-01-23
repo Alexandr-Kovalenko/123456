@@ -1,0 +1,22 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 108px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 24px;
+  }
+}

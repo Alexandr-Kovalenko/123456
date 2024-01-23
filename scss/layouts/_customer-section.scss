@@ -1,0 +1,16 @@
+.customer-section {
+  &__title {
+    color: var(--color-primary-light);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.16;
+    background-color: aqua; //remove
+  }
+
+  &__text {
+    color: var(--color-secondary-silver);
+    font-size: 16px;
+    line-height: 1.17;
+    background-color: aqua; //remove
+  }
+}

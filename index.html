@@ -4,130 +4,171 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog club</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
         <nav class="header__nav">
-          <div class="header__logo">
-            <a href="./index.html">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-          </div>
           <div class="header__menu">
-            <a href="#walkinng-section">Less talk</a>
-            <a href="#services-section">Services category</a>
-            <a href="#customer-section">Happy customer</a>
-            <a href="#contact-section">Contact</a>
+            <a class="link" href="#walking-section">Less talk</a>
+            <a class="link" href="#services-section">Services category</a>
+            <a class="link" href="#customer-section">Happy customer</a>
+            <a class="link" href="#contact-section">Contact</a>
           </div>
         </nav>
         <div class="header__buttons">
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#icon-shop"></use>
-          </svg>
-          <button type="button">Contact us</button>
+          <button class="icon" type="button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-shop"></use>
+            </svg>
+          </button>
+          <button class="button" type="button">Contact us</button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section" id="hero-section">
-        <div class="container">
+        <div class="hero-section__container container">
           <div class="hero-section__text">
-            <h1>Taking care for your Smart Dog!</h1>
-            <p>
-              Human–canine bonding is the relationship between dogs and humans
-            </p>
-            <button>Explore more</button>
+            <h1 class="hero-section__title">Taking care for your Smart Dog!</h1>
+            <div class="hero-section__block">
+              <p class="hero-section__paragraph">
+                Human–canine bonding is the relationship between dogs and humans
+              </p>
+              <button class="hero-sction__button button" type="button">
+                Explore more
+              </button>
+            </div>
           </div>
-          <div class="hero-section__dog">
-            <img src="./images/dog.jpg" alt="Dog in hero-section" />
-          </div>
-          <div class="hero-section__dog-backgrounnd">
-            <img src="./images/background-elements.png" alt="dog-backgrounnd" />
+          <div class="hero-section__dog-photo">
+            <img src="./images/dog.png" alt="Dog in hero-section" />
           </div>
         </div>
       </section>
       <section class="walking-section" id="walking-section">
-        <div class="container">
+        <div class="walking-section__container container">
           <div class="walking-section__image-container">
-            <img src="./images/lying-dog.png" alt="Lying dog" />
             <img
-              src="./images/video-icon-background.png"
-              alt="Background for the button-video"
+              class="walking-section__dog-photo"
+              src="./images/lying-dog.png"
+              alt="Lying dog"
             />
-            <img src="./images/trace-1.png" alt="Trace 1" />
-            <img src="./images/trace-2.png" alt="Trace 3" />
-            <img src="./images/trace-3.png" alt="Trace 3" />
+            <div class="walking-section__background-video">
+              <img
+                src="./images/video-icon-background.png"
+                alt="Background for the button-video"
+              />
+              <button class="walking-section__icon-video" type="button">
+                <svg width="48" height="48">
+                  <use href="/images/icons.svg#icon-walking-video"></use>
+                </svg>
+                <p>Learn more</p>
+              </button>
+            </div>
+            <img
+              class="walking-section__trace-1"
+              src="./images/trace-1.png"
+              alt="Trace 1"
+            />
+            <img
+              class="walking-section__trace-2"
+              src="./images/trace-2.png"
+              alt="Trace 3"
+            />
+            <img
+              class="walking-section__trace-3"
+              src="./images/trace-3.png"
+              alt="Trace 3"
+            />
           </div>
-          <div class="walking-section__text">
-            <h2>Less talk and more walk</h2>
-            <p>
+          <div class="walking-section__text-container">
+            <div class="walking-section__title">
+              <h2 class="title-text">Less talk and more walk</h2>
+            </div>
+            <p class="walking-section__text">
               Sometimes our career, lifestyle, or routines can make it difficult
               to provide your pet with the recommended amount of exercise that
               they need. Which is why, it’s okay to use an extra hand in walking
               dogs so they are in perfect shape, mentally and physically.
             </p>
-            <button type="button">Explore more</button>
+            <button class="button" type="button">Explore more</button>
           </div>
         </div>
       </section>
       <section class="services-section" id="services-section">
         <div class="container">
-          <h2>Services category</h2>
+          <h2 class="services-section__title title-text">Services category</h2>
           <div class="services-section__category-container">
-            <article>
+            <article class="services-card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-grooming"></use>
               </svg>
-              <h3>Grooming</h3>
+              <h3 class="services-section__title-card">Grooming</h3>
             </article>
-            <article>
+            <article class="services-card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-nutrition"></use>
               </svg>
-              <h3>Nutrition</h3>
+              <h3 class="services-section__title-card">Nutrition</h3>
             </article>
-            <article>
+            <article class="services-card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-training"></use>
               </svg>
-              <h3>Training</h3>
+              <h3 class="services-section__title-card">Training</h3>
             </article>
-            <article>
+            <article class="services-card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-bathing"></use>
               </svg>
-              <h3>Bathing</h3>
+              <h3 class="services-section__title-card">Bathing</h3>
             </article>
             <div class="services-section__more-services">
-              <p>More services</p>
+              <button class="services-section__button" type="button">
+                <p class="services-section__button-text">more services</p>
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
       <section class="customer-section" id="customer-section">
         <div class="container">
-          <h2>Happy customer</h2>
+          <h2 class="title-text">Happy customer</h2>
           <div class="customer-section__cards-container">
             <article>
-              <h3>Christin & Tom</h3>
-              <p>Love the overall workout experience</p>
+              <h3 class="customer-section__title">Christin & Tom</h3>
+              <p class="customer-section__text">
+                Love the overall workout experience
+              </p>
             </article>
             <article>
-              <h3>Anna & Tobby</h3>
-              <p>Amazing Products & Delivery on time</p>
+              <h3 class="customer-section__title">Anna & Tobby</h3>
+              <p class="customer-section__text">
+                Amazing Products & Delivery on time
+              </p>
             </article>
             <article>
-              <h3>Sindy & Kitch</h3>
-              <p>Great job with the trainer!</p>
+              <h3 class="customer-section__title">Sindy & Kitch</h3>
+              <p class="customer-section__text">Great job with the trainer!</p>
             </article>
           </div>
         </div>
       </section>
       <section class="contact-section" id="contact-section">
-        <div class="comtainer">
-          <h2>Our experts will take care of your friend</h2>
-          <p>Fill out the form so we can contact you!</p>
+        <div class="container">
+          <h2 class="title-text">Our experts will take care of your friend</h2>
+          <p class="contact-section__text">
+            Fill out the form so we can contact you!
+          </p>
         </div>
       </section>
     </main>
@@ -150,10 +191,10 @@
             </div>
           </div>
           <div class="footer-menu">
-            <a href="#walkinng-section">Less talk</a>
-            <a href="#services-section">Services category</a>
-            <a href="#customer-section">Happy customer</a>
-            <a href="#contact-section">Contact</a>
+            <a class="link" href="#walking-section">Less talk</a>
+            <a class="link" href="#services-section">Services category</a>
+            <a class="link" href="#customer-section">Happy customer</a>
+            <a class="link" href="#contact-section">Contact</a>
           </div>
           <div class="footer__forms"></div>
         </nav>

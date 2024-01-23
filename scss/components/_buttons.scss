@@ -1,0 +1,17 @@
+.button {
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-brand);
+  border: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.17;
+  transition-duration: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-secondary-yellow);
+  }
+}
