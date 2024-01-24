@@ -1,0 +1,17 @@
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.16;
+    color: var(--color-secondary-dark-gray);
+    text-decoration: none;
+
+    &__control {
+      background-color: transparent;
+    }
+  }
+}

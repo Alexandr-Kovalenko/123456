@@ -1,18 +1,27 @@
 @import "./utils/fonts";
 @import "./utils/animations";
+@import "./utils/utils";
 @import "./utils/variables";
 
 @import "./components/buttons";
+@import "./components/carousel-button";
+@import "./components/customer-card";
 @import "./components/icons";
+@import "./components/inputs";
 @import "./components/links";
+@import "./components/pagination";
 @import "./components/services-card";
+@import "./components/terms";
 @import "./components/texts";
 
 @import "./base";
+@import "./layouts/body";
 @import "./layouts/contact-section";
 @import "./layouts/customer-section";
+@import "./layouts/footer";
 @import "./layouts/general";
 @import "./layouts/header";
 @import "./layouts/hero-section";
+@import "./layouts/modal-window";
 @import "./layouts/services-section";
 @import "./layouts/walking-section";

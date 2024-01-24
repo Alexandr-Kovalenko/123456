@@ -1,8 +1,54 @@
 .contact-section {
+  position: relative;
+  max-width: 1440px;
+  padding: 234px 400px 92px 420px;
+  margin: -66px auto 0;
+  background-image: url("../images/contact_section_background.png");
+  background-repeat: no-repeat;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
   &__text {
     color: var(--color-secondary-dark-gray);
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 24px auto 16px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &::before {
+    width: 353px;
+    height: 520px;
+    top: 286px;
+    left: 0;
+    background-image: url("../images/a_dog_on_a_leash.png");
+  }
+
+  &::after {
+    width: 322px;
+    height: 752px;
+    top: 97px;
+    right: 0;
+    background-image: url("../images/dog_contact_section.png");
   }
 }

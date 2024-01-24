@@ -1,0 +1,37 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 7px;
+    left: 40px;
+    fill: var(--color-primary-brand);
+  }
+
+  &__control {
+    padding: 12px 40px 12px 80px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-brand);
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 1px;
+
+    &::placeholder {
+      color: var(--color-primary-brand);
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 1px;
+    }
+
+    &:focus {
+      border-color: var(--color-primary-brand);
+      outline: none;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+}

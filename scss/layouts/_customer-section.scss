@@ -1,16 +1,24 @@
 .customer-section {
+  padding-top: 48px;
+
   &__title {
-    color: var(--color-primary-light);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.16;
-    background-color: aqua; //remove
+    text-align: center;
+    margin-bottom: 48px;
   }
 
-  &__text {
-    color: var(--color-secondary-silver);
-    font-size: 16px;
-    line-height: 1.17;
-    background-color: aqua; //remove
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0 120px;
+  }
+
+  &__container {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // margin: 0;
+    // gap: 16px;
+    overflow: hidden;
   }
 }

@@ -1,0 +1,86 @@
+.footer {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto 50px;
+  padding: 32px 395px 32px 100px;
+  background-color: var(--color-secondary-pink);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 292px;
+    height: 305px;
+    bottom: -46px;
+    right: 100px;
+    background-image: url("../images/dog_footer.png");
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-basis: 320px;
+  }
+
+  &__form-field {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    left: 25px;
+    fill: var(--color-primary-brand);
+  }
+
+  &__control {
+    padding: 8px 24px 8px 56px;
+    width: 277px;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-brand);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.33;
+    max-width: 277px;
+
+    &.cmc {
+      padding: 8px 24px;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-brand);
+      font-size: 16px;
+      line-height: 1.33;
+      letter-spacing: 1px;
+    }
+
+    &:focus {
+      border-color: var(--color-primary-brand);
+      outline: none;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+
+  &__button {
+    padding: 8px 24px;
+    font-size: 16px;
+  }
+}
