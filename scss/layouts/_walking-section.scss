@@ -84,19 +84,40 @@
     cursor: pointer;
     transition-duration: 0.2s;
 
-    &:hover {
-      color: var(--color-secondary-yellow);
-      fill: var(--color-secondary-yellow);
-    }
-
     @media screen and (min-width: $bp-desktop) {
       top: -105px;
       left: 40px;
     }
 
-    &__text-video {
-      text-decoration: none;
+    &:hover {
+      color: var(--color-secondary-yellow);
+      fill: var(--color-secondary-yellow);
     }
+  }
+
+  &__icon-video-mobile {
+    position: relative;
+    top: 0;
+    left: -5px;
+    color: var(--color-primary-light);
+    fill: var(--color-primary-light);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+
+    &:hover {
+      color: var(--color-secondary-yellow);
+      fill: var(--color-secondary-yellow);
+    }
+  }
+
+  &__text-video {
+    text-decoration: none;
   }
 
   &__text-container {
