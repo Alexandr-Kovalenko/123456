@@ -1,9 +1,13 @@
 .title-text {
   margin: 0;
   font-family: "Rowdies", sans-serif;
-  font-size: 56px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 1.25;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 56px;
+  }
 }
 
 .centered {

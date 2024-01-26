@@ -1,22 +1,68 @@
 .header {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 32px 108px;
+  padding: 16px 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 32px 108px;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+  }
+
+  &__logo {
+    width: 92px;
+    height: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 182px;
+      height: 43px;
+    }
   }
 
   &__menu {
-    display: flex;
+    display: none;
     gap: 48px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
   }
 
   &__buttons {
     display: flex;
     gap: 24px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__icon-desktop {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__icon-mobile {
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

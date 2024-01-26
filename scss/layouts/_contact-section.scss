@@ -1,54 +1,78 @@
 .contact-section {
   position: relative;
   max-width: 1440px;
-  padding: 234px 400px 92px 420px;
-  margin: -66px auto 0;
-  background-image: url("../images/contact_section_background.png");
-  background-repeat: no-repeat;
+  padding: 36px 20px 20px 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 234px 400px 92px 420px;
+    margin: -66px auto 0;
+    background-image: url("../images/contact_section_background.png");
+    background-repeat: no-repeat;
+  }
 
   &__title {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
     color: var(--color-secondary-dark-gray);
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.17;
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 1px;
+      margin-bottom: 42px;
+    }
   }
 
   &__form-field {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 24px;
+    }
   }
 
   &__button {
     display: block;
-    margin: 24px auto 16px;
+    margin: 16px auto 9px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 24px auto 16px;
+    }
   }
 
-  &::before,
-  &::after {
-    position: absolute;
-    background-repeat: no-repeat;
-    content: "";
-  }
+  @media screen and (min-width: $bp-desktop) {
+    &::before,
+    &::after {
+      position: absolute;
+      background-repeat: no-repeat;
+      content: "";
+    }
 
-  &::before {
-    width: 353px;
-    height: 520px;
-    top: 286px;
-    left: 0;
-    background-image: url("../images/a_dog_on_a_leash.png");
-  }
+    &::before {
+      width: 353px;
+      height: 520px;
+      top: 286px;
+      left: 0;
+      background-image: url("../images/a_dog_on_a_leash.png");
+    }
 
-  &::after {
-    width: 322px;
-    height: 752px;
-    top: 97px;
-    right: 0;
-    background-image: url("../images/dog_contact_section.png");
+    &::after {
+      width: 322px;
+      height: 752px;
+      top: 97px;
+      right: 0;
+      background-image: url("../images/dog_contact_section.png");
+    }
   }
 }

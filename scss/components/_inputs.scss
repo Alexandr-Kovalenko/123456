@@ -4,25 +4,41 @@
   &__label {
     position: absolute;
     top: 7px;
-    left: 40px;
+    left: 27px;
     fill: var(--color-primary-brand);
+
+    @media screen and (min-width: $bp-desktop) {
+      left: 40px;
+    }
   }
 
   &__control {
-    padding: 12px 40px 12px 80px;
+    padding: 8px 24px 8px 56px;
     width: 100%;
     background-color: transparent;
     border: 1px solid var(--color-primary-brand);
     border-radius: 8px;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 1.17;
 
-    &::placeholder {
-      color: var(--color-primary-brand);
+    @media screen and (min-width: $bp-desktop) {
+      padding: 12px 40px 12px 20px;
       font-size: 18px;
       line-height: 1.33;
       letter-spacing: 1px;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-brand);
+      font-size: 16px;
+      line-height: 1.17;
+
+      @media screen and (min-width: $bp-desktop) {
+        padding: 8px 24px 8px 56px;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 1px;
+      }
     }
 
     &:focus {
@@ -32,6 +48,20 @@
 
     &:focus::placeholder {
       color: var(--color-primary-dark);
+    }
+  }
+
+  &__icon-desktop {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__icon-mobile {
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
     }
   }
 }

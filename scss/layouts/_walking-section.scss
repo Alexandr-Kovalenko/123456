@@ -1,5 +1,9 @@
 .walking-section {
-  padding-bottom: 16px;
+  padding: 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 16px;
+  }
 
   &__container {
     display: flex;
@@ -7,11 +11,16 @@
   }
 
   &__image-container {
+    display: none;
     position: relative;
     flex-basis: 676px;
     background-image: url(/images/walkman-background.svg);
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
   }
 
   &__dog-photo {
@@ -21,9 +30,16 @@
   }
 
   &__background-video {
-    position: absolute;
-    top: 142px;
-    left: 405px;
+    background-image: url("../../images/video-icon-background-mobile.png");
+    background-repeat: no-repeat;
+    padding: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      top: 142px;
+      left: 405px;
+      background-image: none;
+    }
   }
 
   &__trace-1 {
@@ -59,8 +75,8 @@
 
   &__icon-video {
     position: relative;
-    top: -105px;
-    left: 40px;
+    top: 0;
+    left: -5px;
     color: var(--color-primary-light);
     fill: var(--color-primary-light);
     border: none;
@@ -73,22 +89,57 @@
       fill: var(--color-secondary-yellow);
     }
 
+    @media screen and (min-width: $bp-desktop) {
+      top: -105px;
+      left: 40px;
+    }
+
     &__text-video {
       text-decoration: none;
     }
   }
 
   &__text-container {
-    flex-basis: 740px;
-    padding: 155px 100px 155px 0;
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: 740px;
+      padding: 155px 100px 155px 0;
+    }
   }
 
   &__title {
-    max-width: 428px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 428px;
+      margin-bottom: 40px;
+    }
   }
 
   &__text {
-    margin-bottom: 24px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 1px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 24px;
+      font-size: 22px;
+      line-height: 1.54;
+    }
+  }
+
+  &__buttons-block {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    gap: 40px;
+  }
+
+  &__button {
+  }
+
+  &__text-video {
+    font-size: 8px;
+    line-height: 1.17;
   }
 }

@@ -1,10 +1,15 @@
 .link {
   color: var(--color-primary-dark);
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 1.18;
   text-decoration: none;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 1px;
+  }
 
   &:hover {
     color: var(--color-primary-brand);

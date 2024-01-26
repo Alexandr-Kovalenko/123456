@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 16px;
   gap: 24px;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-top: 32px;
+  }
 
   &__button {
     background-color: var(--color-secondary-dark-gray);

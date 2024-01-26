@@ -1,24 +1,41 @@
 .customer-section {
-  padding-top: 48px;
+  padding: 20px 20px 36px 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 48px;
+  }
 
   &__title {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 48px;
+    }
   }
 
   &__slider {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: 0 120px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 0 100px;
+    }
   }
 
   &__container {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // margin: 0;
-    // gap: 16px;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
   }
 }

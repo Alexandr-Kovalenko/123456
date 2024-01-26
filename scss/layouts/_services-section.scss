@@ -1,16 +1,45 @@
 .services-section {
-  padding: 16px 0 48px;
+  padding: 20px 48px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 0 48px;
+  }
 
   &__title {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
     text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 48px;
+    }
   }
 
   &__category-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
     max-width: 1228px;
     margin: 0 auto;
     gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__card {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__card-mobile {
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__title-card {
@@ -21,19 +50,34 @@
   }
 
   &__more-services {
-    align-self: self-end;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: inline;
+      width: 240px;
+      align-self: self-end;
+    }
+  }
+
+  &__more-services-mobile {
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__button {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
+    width: 240px;
     padding: 0;
     font-size: 18px;
     color: var(--color-primary-brand);
     fill: var(--color-primary-brand);
     border: none;
     background-color: transparent;
+    text-decoration: none;
     cursor: pointer;
   }
 

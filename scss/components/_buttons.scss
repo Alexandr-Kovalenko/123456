@@ -1,5 +1,5 @@
 .button {
-  padding: 16px 32px;
+  padding: 8px 24px;
   color: var(--color-primary-light);
   background-color: var(--color-primary-brand);
   border: none;
@@ -13,5 +13,9 @@
 
   &:hover {
     background-color: var(--color-secondary-yellow);
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 32px;
   }
 }

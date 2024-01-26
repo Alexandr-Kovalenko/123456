@@ -13,9 +13,9 @@
   <body class="body">
     <header class="header">
       <div class="header__container container">
-        <div class="header__logo">
+        <div>
           <a href="./index.html">
-            <img src="./images/logo.png" alt="logo" />
+            <img class="header__logo" src="./images/logo.png" alt="logo" />
           </a>
         </div>
         <nav class="header__nav">
@@ -27,14 +27,48 @@
           </div>
         </nav>
         <div class="header__buttons">
-          <a class="icon" href="#" target="_blank">
+          <a class="header__icon-desktop icon" href="#" target="_blank">
             <svg width="40" height="40">
               <use href="./images/icons.svg#icon-shop"></use>
             </svg>
           </a>
-          <button class="button modal-btn-open" type="button">
+          <a class="header__icon-mobile icon" href="#" target="_blank">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-shop"></use>
+            </svg>
+          </a>
+          <button class="header__button button modal-btn-open" type="button">
             Contact us
           </button>
+          <button class="header__burger icon menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <button class="mobile-menu__close menu-btn-close" type="button">
+          <img src="./images/close-mobile-menu.png" alt="Close" />
+        </button>
+        <img
+          class="mobile-menu__logo"
+          src="./images/logo-mobile.png"
+          alt="Logo mobile"
+        />
+        <div class="mobile-menu__menu">
+          <a class="link" href="#walking-section">Less talk</a>
+          <a class="link" href="#services-section">Services category</a>
+          <a class="link" href="#customer-section">Happy customer</a>
+          <a class="link" href="#contact-section">Contact</a>
+        </div>
+        <div class="mobile-menu__socials">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="./images/instagram-mobile.png" alt="instagram icon" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./images/facebook-mobile.png" alt="facebook icon" />
+          </a>
         </div>
       </div>
     </header>
@@ -95,7 +129,10 @@
           </div>
           <div class="walking-section__text-container">
             <div class="walking-section__title">
-              <h2 class="title-text">Less talk and more walk</h2>
+              <h2 class="title-text">
+                Less talk <br />
+                and more walk
+              </h2>
             </div>
             <p class="walking-section__text">
               Sometimes our career, lifestyle, or routines can make it difficult
@@ -103,7 +140,19 @@
               they need. Which is why, it’s okay to use an extra hand in walking
               dogs so they are in perfect shape, mentally and physically.
             </p>
-            <button class="button" type="button">Explore more</button>
+            <div class="walking-section__buttons-block">
+              <button class="walking-section__button button" type="button">
+                Explore more
+              </button>
+              <div class="walking-section__background-video">
+                <button class="walking-section__icon-video" type="button">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-walking-video"></use>
+                  </svg>
+                  <p class="walking-section__text-video">Learn more</p>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -111,31 +160,45 @@
         <div class="container">
           <h2 class="services-section__title title-text">Services category</h2>
           <div class="services-section__category-container">
-            <article class="services-card">
+            <article class="services-card services-section__card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-grooming"></use>
               </svg>
               <h3 class="services-section__title-card">Grooming</h3>
             </article>
-            <article class="services-card">
+            <article class="services-card services-section__card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-nutrition"></use>
               </svg>
               <h3 class="services-section__title-card">Nutrition</h3>
             </article>
-            <article class="services-card">
+            <article class="services-card services-section__card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-training"></use>
               </svg>
               <h3 class="services-section__title-card">Training</h3>
             </article>
-            <article class="services-card">
+            <article class="services-card services-section__card">
               <svg width="96" height="96">
                 <use href="./images/icons.svg#icon-bathing"></use>
               </svg>
               <h3 class="services-section__title-card">Bathing</h3>
             </article>
             <div class="services-section__more-services">
+              <a class="services-section__button" href="#" target="_blank">
+                <p class="services-section__button-text">more services</p>
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <article class="services-card services-section__card-mobile">
+              <svg width="96" height="96">
+                <use href="./images/icons.svg#icon-nutrition"></use>
+              </svg>
+              <h3 class="services-section__title-card">Nutrition</h3>
+            </article>
+            <div class="services-section__more-services-mobile">
               <a class="services-section__button" href="#" target="_blank">
                 <p class="services-section__button-text">more services</p>
                 <svg width="32" height="32">
@@ -150,7 +213,10 @@
         <div class="container">
           <h2 class="customer-section__title title-text">Happy customer</h2>
           <div class="customer-section__slider">
-            <button class="carousel-button prev" type="button">
+            <button
+              class="customer-section__button carousel-button prev"
+              type="button"
+            >
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-carousel-arrow"></use>
               </svg>
@@ -159,7 +225,7 @@
             <div class="customer-section__container swiper">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <article class="customer-card">
+                  <article class="customer-card customer-section__card">
                     <img
                       class="customer-card__image"
                       src="./images/Cristin_and_Tom.jpg"
@@ -196,7 +262,7 @@
                   </article>
                 </li>
                 <li class="swiper-slide">
-                  <article class="customer-card">
+                  <article class="customer-card customer-section__card">
                     <img
                       class="customer-card__image"
                       src="./images/Anna_and_Toby.jpg"
@@ -237,7 +303,7 @@
                   </article>
                 </li>
                 <li class="swiper-slide">
-                  <article class="customer-card">
+                  <article class="customer-card customer-section__card">
                     <img
                       class="customer-card__image"
                       src="./images/Sindy_and_Kitch.jpg"
@@ -274,7 +340,7 @@
                   </article>
                 </li>
                 <li class="swiper-slide">
-                  <article class="customer-card">
+                  <article class="customer-card customer-section__card">
                     <img
                       class="customer-card__image"
                       src="./images/Cristin_and_Tom.jpg"
@@ -311,7 +377,7 @@
                   </article>
                 </li>
                 <li class="swiper-slide">
-                  <article class="customer-card">
+                  <article class="customer-card customer-section__card">
                     <img
                       class="customer-card__image"
                       src="./images/Anna_and_Toby.jpg"
@@ -352,7 +418,7 @@
                   </article>
                 </li>
                 <li class="swiper-slide">
-                  <article class="customer-card">
+                  <article class="customer-card customer-section__card">
                     <img
                       class="customer-card__image"
                       src="./images/Sindy_and_Kitch.jpg"
@@ -391,7 +457,10 @@
               </ul>
             </div>
 
-            <button class="carousel-button next" type="button">
+            <button
+              class="customer-section__button carousel-button next"
+              type="button"
+            >
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-carousel-arrow"></use>
               </svg>
@@ -418,7 +487,10 @@
           <form name="contact-form" autocomplete="off">
             <div class="contact-section__form-field input">
               <label class="input__label" for="user-name">
-                <svg width="32" height="32">
+                <svg class="input__icon-desktop" width="32" height="32">
+                  <use href="./images/icons.svg#icon-man"></use>
+                </svg>
+                <svg class="input__icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-man"></use>
                 </svg>
               </label>
@@ -434,7 +506,10 @@
 
             <div class="contact-section__form-field input">
               <label class="input__label" for="pet-name">
-                <svg width="32" height="32">
+                <svg class="input__icon-desktop" width="32" height="32">
+                  <use href="./images/icons.svg#icon-pet"></use>
+                </svg>
+                <svg class="input__icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-pet"></use>
                 </svg>
               </label>
@@ -450,7 +525,10 @@
 
             <div class="contact-section__form-field input">
               <label class="input__label" for="user-phone">
-                <svg width="32" height="32">
+                <svg class="input__icon-desktop" width="32" height="32">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <svg class="input__icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </label>
@@ -466,7 +544,10 @@
 
             <div class="contact-section__form-field input">
               <label class="input__label" for="user-email">
-                <svg width="32" height="32">
+                <svg class="input__icon-desktop" width="32" height="32">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <svg class="input__icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </label>
@@ -518,12 +599,25 @@
             </a>
           </div>
         </div>
+        <img
+          class="footer__logo-mobile"
+          src="./images/logo-mobile.png"
+          alt="Logo mobile"
+        />
         <nav class="footer__nav">
           <a class="link" href="#walking-section">Less talk</a>
           <a class="link" href="#services-section">Services category</a>
           <a class="link" href="#customer-section">Happy customer</a>
           <a class="link" href="#contact-section">Contact</a>
         </nav>
+        <div class="footer__socials-mobile">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="./images/instagram-mobile.png" alt="instagram icon" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./images/facebook-mobile.png" alt="facebook icon" />
+          </a>
+        </div>
         <form name="footer-form">
           <div class="footer__forms">
             <div class="footer__form-field">
@@ -574,6 +668,7 @@
             </form>
           </div>
         </form>
+        <div class="footer__dog-image"></div>
       </div>
     </footer>
 
@@ -671,6 +766,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
   </body>
