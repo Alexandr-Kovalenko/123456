@@ -27,8 +27,10 @@
   }
 
   &__container {
-    // display: flex;
-    // justify-content: center;
     overflow: hidden;
+  }
+
+  &__list {
+    padding: 1px;
   }
 }
