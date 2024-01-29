@@ -1,5 +1,5 @@
 .carousel-button {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -12,6 +12,10 @@
   fill: var(--color-primary-light);
   cursor: pointer;
   transition-duration: 0.3s;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+  }
 
   &:hover {
     background-color: var(--color-primary-brand);
